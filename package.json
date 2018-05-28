@@ -1,0 +1,27 @@
+{
+  "name": "hangman",
+  "version": "1.0.0",
+  "description": "Hangman game using javascript constructors and node.js",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtgeddes/JavaScript-Constructor-Word-Guess.git"
+  },
+  "keywords": [
+    "Hangman",
+    "constructor",
+    "node"
+  ],
+  "author": "Matthew Geddes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mtgeddes/JavaScript-Constructor-Word-Guess/issues"
+  },
+  "homepage": "https://github.com/mtgeddes/JavaScript-Constructor-Word-Guess#readme",
+  "dependencies": {
+    "inquirer": "^5.2.0"
+  }
+}
