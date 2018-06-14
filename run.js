@@ -65,10 +65,20 @@ let game = function () {
             {
                 type: "input",
                 message: "Guess a letter!",
-                name: 'guess'
+                name: 'guess',
+                validate: function validate(check){
+                    guessedLetter = check.toUpperCase();
+                    
+                    if (guessedLetter.length > 1) {
+                        return "You have entered too many letters";
+                    } else if (usedLetters.indexOf(guessedLetter) !== -1) {
+                        return "You have previously guessed that letters";
+                    } else {
+                        return true;
+                    };
+                }
             },
         ]).then(answers => {
-            guessedLetter = answers.guess.toUpperCase();
 
             // Stops user from re-using a guess...
             if (usedLetters.indexOf(guessedLetter) !== -1) {
