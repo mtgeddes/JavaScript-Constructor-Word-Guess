@@ -68,7 +68,7 @@ let game = function () {
                 name: 'guess',
                 validate: function validate(check){
                     guessedLetter = check.toUpperCase();
-                    
+
                     if (guessedLetter.length > 1) {
                         return "You have entered too many letters";
                     } else if (usedLetters.indexOf(guessedLetter) !== -1) {
@@ -80,15 +80,8 @@ let game = function () {
             },
         ]).then(answers => {
 
-            // Stops user from re-using a guess...
-            if (usedLetters.indexOf(guessedLetter) !== -1) {
-                console.log("You have previously guessed that letter.");
-                word.wordShow();
-                askUser();
-            } 
-
             // Makes sure user doesn't input more than one letter...
-            else if (answers.guess.length > 1) {
+            if (answers.guess.length > 1) {
                 console.log("Please input only one letter");
                 askUser();
                 usedLetters += guessedLetter;
