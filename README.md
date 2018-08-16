@@ -2,6 +2,6 @@
 Hangman using Node.js and JavaScript constructors
 
 ### <a name="demo">GIF-Demo
-![Demo](/images/demo.png)
+![Demo](/images/demo.PNG)
 
 
