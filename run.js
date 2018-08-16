@@ -5,7 +5,7 @@ let inquirer = require('inquirer');
 
 let game = function () {
    
-    let wordArray = ["Jurassic Park", "Test", "Hoover Dam", "Sports", "Music", "Fun in the Sun", "Hello!", "This assignment deserves an A plus"];
+    let wordArray = ["Jurassic Park", "Test", "Hoover Dam", "Sports", "Music", "Fun in the Sun", "Hello!"];
     let word;
     let guessedLetter;
     let allCorrect = true;
