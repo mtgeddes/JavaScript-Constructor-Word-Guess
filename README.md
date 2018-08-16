@@ -5,3 +5,14 @@ Hangman using Node.js and JavaScript constructors
 ![Demo](/images/demo.PNG)
 
 
+### To run
+Install dependencies
+```
+npm i
+```
+
+Run app
+
+```
+node run
+```
